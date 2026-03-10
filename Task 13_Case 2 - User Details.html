@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        h2{
+            text-align: center;
+        }
+        table {
+            border: 1px solid gray;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        input{
+            margin-bottom: 10px;
+        }
+        
+    </style>
+    <body>
+        <form>
+            <table style="width: 50%;">
+                <tr>
+                    <td>
+                        <h2 colspan="2"><h2>Employee Detail</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            01. <b style="color: blue;">Personal Information</b>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="empname">Employee Name <sup style="color: red;">*</sup></label>
+                        <input type="text" name="empname" id="empname" placeholder="First Name">
+                    </td>
+                    <td>
+                        <label for="lname">Last Name</label>
+                        <input type="text" name="lname" id="lname" placeholder="Last Name">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="date">Starting Date</label>
+                        <input type="date" style="color: gray;">
+                    </td>
+                    <td>
+                        <label for="date">Birth Date</label>
+                        <input type="date" style="color: gray;">
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        <label for="emptype">Employee Type</label><br>
+                        <select name="emptype" id="emptype" style="width: 170px;">
+                            <option value="Select">Select</option>
+                            <option value="Magang">Magang</option>
+                            <option value="Full time">Full Time</option>
+                        </select>
+                    </td>
+                    <td>
+                        <label for="gender">Gender</label><br>
+                        <input type="radio" name="gender" id="male" value="Male" checked>
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" id="female" value="Female">
+                        <label for="male">Female</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="date">Position</label>
+                        <input type="text" name="position" id="position" placeholder="Position">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            02. <b style="color: blue;">Location</b>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="date">City</label>
+                        <input type="text" name="city" id="city" placeholder="City">
+                    </td>
+                    <td>
+                        <label for="date">State</label>
+                        <input type="text" name="state" id="state" placeholder="State">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="date">ZIP</label>
+                        <input type="text" name="zip" id="zip" placeholder="ZIP">
+                    </td>
+                    <td>
+                        <label for="date">Address</label>
+                        <textarea name="addr" id="addr" cols="20" rows="5" placeholder="Address"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            03. <b style="color: blue;">Contact Information</b>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="date">Phone</label>
+                        <input type="text" name="phone" id="phone" placeholder="Phone">
+                    </td>
+                    <td>
+                        <label for="date">Email</label>
+                        <input type="text" name="email" id="email" placeholder="Email">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;">
+                        <input type="button" name="btn" id="btn" value="Register" >
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
